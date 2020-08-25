@@ -1,21 +1,17 @@
 {
-  "name": "create-react-app",
-  "version": "3.4.1",
+  "name": "create-jlt-app",
+  "version": "1.0.0",
   "keywords": [
     "react"
   ],
-  "description": "Create React apps with no build configuration.",
+  "description": "Create jlt apps with no build configuration.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
-    "directory": "packages/create-react-app"
+    "directory": "packages/create-jlt-app"
   },
   "license": "MIT",
   "engines": {
     "node": ">=10"
-  },
-  "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
   },
   "files": [
     "index.js",

@@ -1,19 +1,16 @@
 {
   "name": "react-scripts",
-  "version": "3.4.1",
+  "version": "1.0.0",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
     "directory": "packages/react-scripts"
   },
   "license": "MIT",
   "engines": {
     "node": "^10.12.0 || >=12.0.0"
   },
-  "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
-  },
+
   "files": [
     "bin",
     "config",
@@ -36,8 +33,8 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.3.0",
     "babel-loader": "8.1.0",
-    "babel-plugin-named-asset-import": "file:/Users/sinoservices/Downloads/create-react-app-master/packages/babel-plugin-named-asset-import",
-    "babel-preset-react-app": "file:/Users/sinoservices/Downloads/create-react-app-master/packages/babel-preset-react-app",
+    "babel-plugin-named-asset-import": "^0.3.6",
+    "babel-preset-react-app": "^9.1.2",
     "bfj": "^7.0.2",
     "camelcase": "^6.0.0",
     "case-sensitive-paths-webpack-plugin": "2.3.0",
@@ -45,7 +42,7 @@
     "dotenv": "8.2.0",
     "dotenv-expand": "5.1.0",
     "eslint": "^7.5.0",
-    "eslint-config-react-app": "file:/Users/sinoservices/Downloads/create-react-app-master/packages/eslint-config-react-app",
+    "eslint-config-react-app":  "^5.2.1",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-flowtype": "^5.2.0",
     "eslint-plugin-import": "^2.22.0",
