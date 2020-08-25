@@ -1,6 +1,6 @@
 {
   "name": "cra-template",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "keywords": [
     "react",
     "create-react-app",
@@ -22,5 +22,6 @@
   "files": [
     "template",
     "template.json"
-  ]
+  ],
+  "gitHead": "eee1c497950e7bc966b30f3140960255d6b54e1b"
 }

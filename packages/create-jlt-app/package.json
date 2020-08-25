@@ -1,6 +1,6 @@
 {
   "name": "create-jlt-app",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "keywords": [
     "react"
   ],
@@ -40,5 +40,6 @@
   "devDependencies": {
     "cross-env": "^7.0.2",
     "jest": "26.3.0"
-  }
+  },
+  "gitHead": "eee1c497950e7bc966b30f3140960255d6b54e1b"
 }
