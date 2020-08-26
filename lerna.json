@@ -17,5 +17,10 @@
       "tag: underlying tools": ":hammer: Underlying Tools"
     },
     "cacheDir": ".changelog"
+  },
+  "command": {
+    "publish": {
+      "registry": "http://192.168.4.214:8081/repository/npm-hosted/"
+    }
   }
 }

@@ -195,7 +195,7 @@ function init() {
   checkForLatestVersion()
     .catch(() => {
       try {
-        return execSync('npm view create-react-app version').toString().trim();
+        return execSync('npm view create-jlt-app version').toString().trim();
       } catch (e) {
         return null;
       }
@@ -205,20 +205,20 @@ function init() {
         console.log();
         console.error(
           chalk.yellow(
-            `You are running \`create-react-app\` ${packageJson.version}, which is behind the latest release (${latest}).\n\n` +
+            `You are running \`create-jlt-app\` ${packageJson.version}, which is behind the latest release (${latest}).\n\n` +
               'We no longer support global installation of Create React App.'
           )
         );
         console.log();
         console.log(
           'Please remove any global installs with one of the following commands:\n' +
-            '- npm uninstall -g create-react-app\n' +
-            '- yarn global remove create-react-app'
+            '- npm uninstall -g create-jlt-app\n' +
+            '- yarn global remove create-jlt-app'
         );
         console.log();
         console.log(
           'The latest instructions for creating a new app can be found here:\n' +
-            'https://create-react-app.dev/docs/getting-started/'
+            'https://create-jlt-app.dev/docs/getting-started/'
         );
         console.log();
         process.exit(1);
@@ -371,7 +371,7 @@ function install(root, useYarn, usePnp, dependencies, verbose, isOnline) {
       [].push.apply(args, dependencies);
 
       // Explicitly set cwd() to work around issues like
-      // https://github.com/facebook/create-react-app/issues/3326.
+      // https://github.com/facebook/create-jlt-app/issues/3326.
       // Unfortunately we can only do this for Yarn because npm support for
       // equivalent --prefix flag doesn't help with this issue.
       // This is why for npm, we run checkThatNpmCanReadCwd() early instead.
@@ -932,7 +932,7 @@ function setCaretRangeForRuntimeDeps(packageName) {
 // Also, if project contains remnant error logs from a previous
 // installation, lets remove them now.
 // We also special case IJ-based products .idea because it integrates with CRA:
-// https://github.com/facebook/create-react-app/pull/368#issuecomment-243446094
+// https://github.com/facebook/create-jlt-app/pull/368#issuecomment-243446094
 function isSafeToCreateProjectIn(root, name) {
   const validFiles = [
     '.DS_Store',
@@ -1019,7 +1019,7 @@ function getProxy() {
   }
 }
 
-// See https://github.com/facebook/create-react-app/pull/3355
+// See https://github.com/facebook/create-jlt-app/pull/3355
 function checkThatNpmCanReadCwd() {
   const cwd = process.cwd();
   let childOutput = null;
@@ -1128,7 +1128,7 @@ function checkForLatestVersion() {
   return new Promise((resolve, reject) => {
     https
       .get(
-        'https://registry.npmjs.org/-/package/create-react-app/dist-tags',
+        'http://192.168.4.214:8081/repository/npm-group/-/package/create-react-app/dist-tags',
         res => {
           if (res.statusCode === 200) {
             let body = '';
