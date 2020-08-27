@@ -1,6 +1,6 @@
 {
   "name": "react-dev-utils",
-  "version": "10.2.4",
+  "version": "10.2.5",
   "description": "webpack utilities used by Create React App",
   "repository": {
     "type": "git",
